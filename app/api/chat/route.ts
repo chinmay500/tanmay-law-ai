@@ -52,7 +52,7 @@ export async function POST(req: NextRequest) {
 If the question is not related to Indian law, respond with: "I specialize in Indian law. Please ask me questions related to Indian legal system, laws, and regulations."`;
 
         // Initialize the model
-        const model = genAI.getGenerativeModel({ model: 'gemini-pro' });
+        const model = genAI.getGenerativeModel({ model: 'gemini-1.5-pro' });
 
         // Start a chat with system prompt
         const chat = model.startChat({
